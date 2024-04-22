@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Nighter</title>
+    <link rel="stylesheet" href="../Css/community.css">
+    <link rel="stylesheet" href="../Css/navbar.css">
+    <link rel="stylesheet" href="../Css/toppage.css">
+    <link rel="stylesheet" href="../Css/stream.css">
+</head>
+
+<body>
+    <script></script>
+    <!-- NavBar -->
+    <nav class="NavBar">
+        <ul>
+            <li><a class="active" id="home" href="../Html/home.html">Home</a></li>
+            <li class="dropdown">
+
+                <a class="activeSto" href="javascript:void(0)" id="store">Store</a>
+
+                <!--Store dropdown Games-->
+                <div class="dropdownContent">
+                    <a class="activeS" id="game" href="../Html/storeGames.html">Games</a>
+                    <a class="activeS" id="device" href="../Html/storeDevices.html">Devices</a>
+
+                </div>
+            </li>
+            <li><a class="active" id="community" href="../Html/community.html">Community</a></li>
+            <li><a class="active" id="profile" href="../Html/profile.html">Profile</a></li>
+            <li><a class="active" id="login" href="../Html/Login.html">Login</a></li>
+            <li style="float: right;">
+                <h1>All Nighter</h1>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="top">
+        <!--Search Group and People-->
+
+        <div class="searchCom">
+            <div>
+                <div class="group">
+                    <p class="G">FIND GROUPS</p>
+                    <input type="search" name="group" id="group" placeholder="Enter Group" />
+                </div>
+                <div class="people">
+                    <p class="P">FIND PEOPLE</p>
+                    <input type="search" name="people" id="people" placeholder="Enter People" />
+                </div>
+            </div>
+
+        </div>
+
+        <!--Create Group-->
+        
+        <div class="CreateG">
+
+            <img src="../Images/Profile/Propic.png" alt="GAvatar" class="Gavatar">
+            </div>
+            <a class="create" onclick="document.getElementById('CreateGroup').style.display='block'">Create Group</a>
+
+
+
+        <div id="CreateGroup" class="modal">
+            <form class="modal-content animate">
+                
+                <img src="../Images/Profile/Propic.png" alt="Avatar" class="avatar">
+
+
+                <div class="container">
+                    <label for="gname"><b>Group Name: </b></label>
+                    <input type="text" placeholder="Enter Your Group Name" name="gname" required>
+
+                    <label for="gmember"><b>Members: </b></label>
+                    <input type="search" placeholder="Add members" name="gmember" required>
+
+                   
+                    <div class="container" style="background-color: rgb(23, 23, 23)">
+                        <button id="createbut" type="submit">Create</button>
+
+                        <button type="button" onclick="document.getElementById('CreateGroup').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+
+
+    
+
+    <!--Community Navbar-->
+    <div class="middleBox">
+   <a id="gen" href="../Html/community.html">General Discussion</a>
+   <a id="str" href="../Html/stream.html">Streams</a>
+   <a id="gro" href="../Html/group.html">Groups</a>
+   <a id="new" href="../Html/news.html">News</a>
+   <a id="gui" href="../Html/guide.html">Guide</a>
+</div>
+
+<div class="GenPage">
+   <table>
+    <tr>
+        <td><p>video</p><img id="like" src="../Images/Profile/like.png"><img id="dislike" src="../Images/Profile/dislike.png"></td>
+        <td><p>video</p><img id="like" src="../Images/Profile/like.png"><img id="dislike" src="../Images/Profile/dislike.png"></td>
+    </tr>
+    <tr>
+        <td><p>video</p><img id="like" src="../Images/Profile/like.png"><img id="dislike" src="../Images/Profile/dislike.png"></td>
+        <td><p>video</p><img id="like" src="../Images/Profile/like.png"><img id="dislike" src="../Images/Profile/dislike.png"></td>
+    </tr>
+    <tr>
+        <td><p>video</p><img id="like" src="../Images/Profile/like.png"><img id="dislike" src="../Images/Profile/dislike.png"></td>
+        <td><p>video</p><img id="like" src="../Images/Profile/like.png"><img id="dislike" src="../Images/Profile/dislike.png"></td>
+    </tr>
+    <tr>
+        <td><p>video</p><img id="like" src="../Images/Profile/like.png"><img id="dislike" src="../Images/Profile/dislike.png"></td>
+        <td><p>video</p><img id="like" src="../Images/Profile/like.png"><img id="dislike" src="../Images/Profile/dislike.png"></td>
+    </tr>
+   </table>
+</div>
+
+
+</body>
+
+</html>

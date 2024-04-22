@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Nighter</title>
+    <link rel="stylesheet" href="../Css/navbar.css">
+    <link rel="stylesheet" href="../Css/profile.css">
+    <link rel="stylesheet" href="../Css/UpdatePassword.css">
+    
+</head>
+<body>
+    <script src="../JS/ChangeUserPassword.js"></script>
+     <!-- NavBar -->
+     <nav class="NavBar">
+        <ul>
+            <li><a class="active" id="home" href="../Html/home.html">Home</a></li>
+            <li class="dropdown">
+                
+                <a class="activeSto" href="javascript:void(0)" id="store">Store</a>
+
+             <!--Store dropdown Games-->
+                <div class="dropdownContent">
+                   <a class="activeS" id="game" href="../Html/storeGames.html">Games</a>
+                   <a class="activeS" id="device" href="../Html/storeDevices.html">Devices</a>
+                
+                </div>
+            </li>
+            <li><a class="active" id="community" href="../Html/community.html">Community</a></li>
+            <li><a class="active" id="profile" href="../Html/profile.html">Profile</a></li>
+            <li><a class="active" id="login" href="../Html/Login.html">Login</a></li>
+            <li style="float: right;"><h1>All Nighter</h1></li>
+            </ul>
+        </nav>
+    <!--Profile-->
+    <h2>Profile Picture</h2>   
+   <div class="photo">
+    <img src="../Images/Profile/Propic.png" alt="Pic" id="defaultPic">
+     <h3>Name</h3>
+     <!--Profile username and password change-->
+     <div class="userpswBox" >
+        <button onclick="document.getElementById(changeUser).style.display='block'"
+        id="CHuser">Change Username?</button>
+        <button onclick="document.getElementById(changePass).style.display='block'"
+         id="CHpsw">Change Password?</button>
+        
+
+         <div id="changeUser" class="modal">
+            <form class="modal-content animate" action="../PHP/updatepassword.php" method="post">
+               
+                <span onclick="document.getElementById('changeUser').style.display='none'" class="close" title="Close Modal">&times;</span>
+               
+                <div class="container">
+                   <label for="uname"><b>New Username</b></label>
+                   <input type="text" placeholder="Username" name="uname" required>
+           
+         <button type="submit">Submit</button>
+                    </div>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('changeUser').style.display='none'" class="cancelbtn">Cancel</button>
+
+         <div id="changePass" class="modal">
+         <form class="modal-content animate" action="../PHP/updatepassword.php" method="post">
+           
+            <span onclick="document.getElementById('changePass').style.display='none'" class="close" title="Close Modal">&times;</span>
+           
+            <div class="container">
+                <label for="psw"><b>New Password</b></label>
+                <input type="password" placeholder="Password" name="psw" required>
+                <label for="Cpsw"><b>Confirm Password</b></label>
+                <input type="password" placeholder="Password" name="Cpsw" required>
+ 
+      <button type="submit">Submit</button>
+                 </div>
+        
+            </form>
+         </div>
+ 
+    </div>
+   </div>
+</body>
+</html>

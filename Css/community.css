@@ -1,0 +1,62 @@
+
+
+.middleBox #gen{
+    border-bottom: 3px solid #02f89e;
+    color: #02f89e;
+    
+}
+
+.GenPage {
+   background-color: #1a1a1a;
+   width: 92.7%;
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-left: 10px;
+   padding-right: 16px;
+   margin-top: 0%;
+   margin-bottom: 10%;
+   margin-left: 3%;
+   overflow: auto;
+   
+   
+}
+
+.GenPage table {
+   
+    margin-top: 0;
+}
+
+
+
+.GenPage td{
+    margin-top: 0;
+    border: 3px solid black;
+    gap: 3px;
+    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-left: 10px;
+    width: 800px;
+    background-image: linear-gradient(to right, rgb(94, 94, 94) ,rgb(195, 195, 195) );
+}
+
+.GenPage p{
+    float: left;
+    padding: 0px;
+    font-size: 20px;
+    
+}
+
+.GenPage #like{
+    float: right;
+    max-width: 10%;
+    max-height: 10%;
+    
+    
+}
+
+.GenPage #dislike{
+    float: right;
+    max-width: 10%;
+    max-height: 10%;
+    
+}

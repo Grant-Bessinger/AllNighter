@@ -1,0 +1,30 @@
+
+
+
+.NavBar #store {
+    background-color: limegreen;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    color: black;
+}
+
+
+
+.dropdownContent #game {
+    background-color: limegreen;
+    border-bottom: 4px solid black;
+    border-right: 4px solid black;
+    border-top: 4px solid limegreen;
+    border-left: 4px solid black;
+    color: black;
+}
+
+
+/* ----------------------------------------------- */
+
+/* Texts */
+
+/* ----------------------------------------------- */
+
+
+
