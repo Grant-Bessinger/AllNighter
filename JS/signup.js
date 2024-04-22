@@ -22,7 +22,7 @@ $(document).ready(function(){
             data: { name:name , email:email ,username: username, password: password },
             success:function(data){
               $(".msg").html(data);
-                window.location.href = "http://localhost/AllNighter/Html/home.html";
+                window.location.href = "http://localhost/AllNighter/home.html";
               
             }
           });
