@@ -25,7 +25,7 @@ $(document).ready(function () {
                  
                   setTimeout(function(){
                     
-                    window.location.href = "http://localhost/AllNighter/Html/home.html";
+                    window.location.href = "http://localhost/AllNighter/home.html";
                 },2000);
                 }
                 else
